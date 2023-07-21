@@ -4,17 +4,17 @@
         <div class="modal-content w3-flat-turquoise">
             <div class="modal-header"
                 style="color:white;background : linear-gradient(to right, #61398F, #8B5FBF);text-shadow:2px 2px 4px #000000;">
-                <h5 class="modal-title">แก้ไขชื่อหน่วยนับสินค้า</h5>
+                <h5 class="modal-title">แก้ไข Tags</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form name="frmEditUnit" id="frmEditUnit" method="POST" style="padding:10px;" action="javascript:void(0);">
+            <form name="frmEditTags" id="frmEditTags" method="POST" style="padding:10px;" action="javascript:void(0);">
                 <div class="modal-body">
                     <div class="form-row">
                         <div class="col-md-6">
                             <label class="col-form-label">ชื่อหน่วยนับสินค้า </label>
-                            <input type="text" class="form-control" name="unit" id="unit" required>
+                            <input type="text" class="form-control" name="tagsname" id="tagsname" required>
                         </div>
                         <div class="col-md-6">
                             <label class="col-form-label">สถานะการใช้งาน</label>
@@ -29,13 +29,13 @@
 
 
                     <hr>
-                    <input type="hidden" id="unitcode" name="unitcode">
+                    <input type="hidden" id="tagscode" name="tagscode">
                 </div>
                 <div class="modal-footer">
                     <div class="col text-center">
                         <button type="button" class="btn" data-dismiss="modal"
                             style="color:white;background : #BFACE2;text-shadow:2px 2px 4px #000000;">ปิด</button>
-                        <button type="submit" form="frmEditUnit" class="btn "
+                        <button type="submit" form="frmEditTags" class="btn "
                             style="color:white;background : #7e57c2;text-shadow:2px 2px 4px #000000;">แก้ไข</button>
                     </div>
                 </div>

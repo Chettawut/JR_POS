@@ -4,18 +4,18 @@
         <div class="modal-content w3-flat-turquoise">
             <div class="modal-header"
                 style="color:white;background : linear-gradient(to right, #61398F, #8B5FBF);text-shadow:2px 2px 4px #000000;">
-                <h5 class="modal-title">เพิ่มหน่วยนับสินค้า</h5>
+                <h5 class="modal-title">เพิ่ม Tags</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form name="frmAddUnit" id="frmAddUnit" method="POST" style="padding:10px;"
+                <form name="frmAddTags" id="frmAddTags" method="POST" style="padding:10px;"
                     action="javascript:void(0);">
                     <div class="form-row">
                         <div class="col-md-6">
-                            <label class="col-form-label">ชื่อหน่วยนับสินค้า </label>
-                            <input type="text" class="form-control" name="add_unit" id="add_unit" required>
+                            <label class="col-form-label">ชื่อ Tags </label>
+                            <input type="text" class="form-control" name="add_tagsname" id="add_tagsname" required>
                         </div>
                     </div>
 
@@ -26,7 +26,7 @@
                     <button type="button" class="btn"
                         style="color:white;background : #BFACE2;text-shadow:2px 2px 4px #000000;"
                         data-dismiss="modal">ปิด</button>
-                    <button type="submit" form="frmAddUnit"
+                    <button type="submit" form="frmAddTags"
                         style="color:white;background :  #7e57c2;text-shadow:2px 2px 4px #000000;"
                         class="btn">เพิ่ม</button>
                 </div>

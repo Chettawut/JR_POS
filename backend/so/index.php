@@ -13,7 +13,7 @@ include_once('../conn.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ข้อมูลหน่วยนับสินค้า</title>
+    <title>ข้อมูลสินค้า</title>
 
     <?php 
     include_once('css.php');
@@ -26,7 +26,7 @@ include_once('../conn.php');
 <body class="hold-transition sidebar-mini sidebar-collapse">
     <div class="wrapper">
 
-        <div class="preloader flex-column justify-content-center align-items-center">
+    <div class="preloader flex-column justify-content-center align-items-center">
             <img class="animation__shake" src="<?php echo PATH; ?>/backend/img/logo_fb.png" alt="AdminLTELogo"
                 width="80">
         </div>
@@ -43,7 +43,7 @@ include_once('../conn.php');
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <span class="m-0"><i class="nav-icon fas fa-paste"></i> ข้อมูลหน่วยนับสินค้า</span>
+                            <span class="m-0"><i class="nav-icon fas fa-paste"></i> ข้อมูลสินค้า</span>
                         </div>
                         <!-- <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -67,7 +67,7 @@ include_once('../conn.php');
                                             style="color:white;background : #673ab7; font-size:20px;text-shadow:2px 2px 4px #000000;"
                                             class="btn" data-toggle="modal" data-target="#modal_add"><i
                                                 class="fas fa-plus-circle" aria-hidden="true"></i>
-                                            เพิ่มหน่วยนับสินค้า</button>
+                                            เพิ่มรหัสสินค้า</button>
                                         <button type="button"
                                             style="color:white;background : #9575cd; font-size:20px;text-shadow:2px 2px 4px #000000;"
                                             id="btnRefresh" class="btn"><i class="fas fa-sync-alt"
@@ -88,12 +88,16 @@ include_once('../conn.php');
                     <br>
                     <div class="row">
                         <div class="col-lg-12 col-12">
-                            <table name="tableUnit" id="tableUnit"
+                            <table name="tableStock" id="tableStock"
                                 class="table table-striped table-valign-middle table-bordered table-hovers text-nowarp">
                                 <thead class="sticky-top table-defalut bg-dark">
                                     <tr>
-                                        <th width="80%">ชื่อหน่วยนับสินค้า</th>
-                                        <th width="20%">สถานะการใช้งาน</th>
+                                        <th width="10%">รหัสสินค้า</th>
+                                        <th width="40%">ชื่อสินค้า</th>
+                                        <th width="20%">ประเภทสินค้า</th>
+                                        <th width="12%" style="text-align:right">จำนวนสต๊อก</th>
+                                        <th width="14%" style="text-align:center">หน่วย</th>
+
                                     </tr>
                                 </thead>
                                 <tbody class="text-nowrap" style="background:#ECF2FF;">

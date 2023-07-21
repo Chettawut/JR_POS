@@ -3,11 +3,11 @@ $(function() {
 
     $.ajax({
         type: "POST",
-        url: "ajax/get_unit.php",
+        url: "ajax/get_type.php",
         //    data: $("#frmMain").serialize(),
         success: function(result) {
 
-            for (count = 0; count < result.unit.length; count++) {
+            for (count = 0; count < result.typecode.length; count++) {
 
                 var status = '';
                 if (result.status[count] == 'Y')
@@ -15,17 +15,23 @@ $(function() {
                 else
                     status = 'ปิดใช้งาน'
 
-                $('#tableUnit').append(
+                $('#tableType').append(
                     '<tr data-toggle="modal" data-target="#modal_edit" id="' + result
-                    .unit[
-                        count] + '" data-whatever="' + result.unitcode[
-                        count] + '">.<td>' + result.unit[count] + '</td><td>' +
+                    .typecode[
+                        count] + '" data-whatever="' + result.typecode[
+                        count] + '"><td>' + result.typename[count] + '</td><td>' +
                     status + '</td></tr>');
             }
 
-            var table = $('#tableUnit').DataTable({
-                "dom": '<"pull-right"f>rt<"bottom"p><"clear">',
-                "ordering": false
+            var table = $('#tableType').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": true,
+                "ordering": true,
+                "info": false,
+                "autoWidth": false,
+                "responsive": false,
+                "scrollX": true
             });
 
             $(".dataTables_filter input[type='search']").css({
@@ -46,11 +52,11 @@ $('#modal_edit').on('show.bs.modal', function(event) {
 
     $.ajax({
         type: "POST",
-        url: "ajax/getsup_unit.php",
+        url: "ajax/getsup_type.php",
         data: "idcode=" + recipient,
         success: function(result) {
-            modal.find('.modal-body #unitcode').val(result.unitcode);
-            modal.find('.modal-body #unit').val(result.unit);
+            modal.find('.modal-body #typecode').val(result.typecode);
+            modal.find('.modal-body #typename').val(result.typename);
             modal.find('.modal-body #status').val(result.status);
 
         }
@@ -61,13 +67,15 @@ $("#btnRefresh").click(function() {
     window.location.reload();
 });
 
-//ส่งใบแจ้ง
-$("#frmAddUnit").submit(function(e) {
+//เพิ่มประเภท
+$("#frmAddType").submit(function(e) {
     e.preventDefault();
+
     $.ajax({
         type: "POST",
-        url: "ajax/add_unit.php",
-        data: $("#frmAddUnit").serialize(),
+        url: "ajax/add_type.php",
+        data: $("#frmAddType").serialize() +
+            "&id=" + '<?php echo $_SESSION['id'];?>',
         success: async function(result) {
 
             if (result.status == 1) // Success
@@ -82,12 +90,13 @@ $("#frmAddUnit").submit(function(e) {
 
 });
 
-$("#frmEditUnit").submit(function() {
+$("#frmEditType").submit(function() {
 
     $.ajax({
         type: "POST",
-        url: "ajax/edit_unit.php",
-        data: $("#frmEditUnit").serialize(),
+        url: "ajax/edit_type.php",
+        data: $("#frmEditType").serialize() +
+            "&id=" + '<?php echo $_SESSION['id'];?>',
         success: async function(result) {
 
             if (result.status == 1) // Success

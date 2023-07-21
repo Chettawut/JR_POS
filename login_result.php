@@ -29,6 +29,7 @@ if ($stmt->num_rows > 0) {
 			session_regenerate_id();
 			$_SESSION['loggedin'] = TRUE;
 			$_SESSION['name'] = $_POST['username'];
+			$_SESSION['type'] = $type;
 			$_SESSION['code'] = $code;
 			$_SESSION['firstname'] = $firstname;
 			$_SESSION['lastname'] = $lastname;

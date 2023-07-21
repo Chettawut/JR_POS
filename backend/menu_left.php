@@ -4,7 +4,7 @@
     <a href="<?php echo PATH; ?>/backend/" class="brand-link bg-purple">
         <img src="<?php echo PATH; ?>/backend/img/logo_fb.png" class="brand-image img-circle elevation-3" <span
             class="brand-text font-weight-light">
-        <span class="brand-text font-weight-light">Ninestarfood</span>
+        <span class="brand-text font-weight-light">JR Stock</span>
 
     </a>
 
@@ -27,16 +27,16 @@
                     <a href="<?php echo PATH; ?>/backend/sr" class="nav-link">
                         <i class="nav-icon fas fa-chart-line"></i>
                         <p>
-                            Sample request
+                            เปิดบิลขาย 
                         </p>
                     </a>
                 </li>
-                <li class="nav-header">Data</li>
+                <li class="nav-header">ข้อมูล</li>
                 <li class="nav-item">
-                    <a href="<?php echo PATH; ?>/backend/item" class="nav-link">
+                    <a href="<?php echo PATH; ?>/backend/items" class="nav-link">
                         <i class="nav-icon fa fa-cube"></i>
                         <p>
-                        Item
+                        สินค้า
                         </p>
                     </a>
                 </li>
@@ -44,7 +44,23 @@
                     <a href="<?php echo PATH; ?>/backend/unit" class="nav-link">
                         <i class="nav-icon fas fas fa-box"></i>
                         <p>
-                            Unit
+                        หน่วยนับสินค้า
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo PATH; ?>/backend/tags" class="nav-link">
+                        <i class="nav-icon fas fas fa-box"></i>
+                        <p>
+                        Tags
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo PATH; ?>/backend/type" class="nav-link">
+                        <i class="nav-icon fa fa-cube"></i>
+                        <p>
+                            ประเภทสินค้า
                         </p>
                     </a>
                 </li>
@@ -52,7 +68,7 @@
                     <a href="<?php echo PATH; ?>/backend/customer" class="nav-link">
                         <i class="nav-icon fa fa-cube"></i>
                         <p>
-                            Customer
+                            ลูกค้า
                         </p>
                     </a>
                 </li>

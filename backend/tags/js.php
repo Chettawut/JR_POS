@@ -3,11 +3,11 @@ $(function() {
 
     $.ajax({
         type: "POST",
-        url: "ajax/get_unit.php",
+        url: "ajax/get_tags.php",
         //    data: $("#frmMain").serialize(),
         success: function(result) {
 
-            for (count = 0; count < result.unit.length; count++) {
+            for (count = 0; count < result.tagscode.length; count++) {
 
                 var status = '';
                 if (result.status[count] == 'Y')
@@ -15,15 +15,15 @@ $(function() {
                 else
                     status = 'ปิดใช้งาน'
 
-                $('#tableUnit').append(
+                $('#tableTags').append(
                     '<tr data-toggle="modal" data-target="#modal_edit" id="' + result
-                    .unit[
-                        count] + '" data-whatever="' + result.unitcode[
-                        count] + '">.<td>' + result.unit[count] + '</td><td>' +
+                    .tagscode[
+                        count] + '" data-whatever="' + result.tagscode[
+                        count] + '"><td>' + result.tagsname[count] + '</td><td>' +
                     status + '</td></tr>');
             }
 
-            var table = $('#tableUnit').DataTable({
+            var table = $('#tableTags').DataTable({
                 "dom": '<"pull-right"f>rt<"bottom"p><"clear">',
                 "ordering": false
             });
@@ -46,11 +46,11 @@ $('#modal_edit').on('show.bs.modal', function(event) {
 
     $.ajax({
         type: "POST",
-        url: "ajax/getsup_unit.php",
+        url: "ajax/getsup_tags.php",
         data: "idcode=" + recipient,
         success: function(result) {
-            modal.find('.modal-body #unitcode').val(result.unitcode);
-            modal.find('.modal-body #unit').val(result.unit);
+            modal.find('.modal-body #tagscode').val(result.tagscode);
+            modal.find('.modal-body #tagsname').val(result.tagsname);
             modal.find('.modal-body #status').val(result.status);
 
         }
@@ -62,12 +62,12 @@ $("#btnRefresh").click(function() {
 });
 
 //ส่งใบแจ้ง
-$("#frmAddUnit").submit(function(e) {
+$("#frmAddTags").submit(function(e) {
     e.preventDefault();
     $.ajax({
         type: "POST",
-        url: "ajax/add_unit.php",
-        data: $("#frmAddUnit").serialize(),
+        url: "ajax/add_tags.php",
+        data: $("#frmAddTags").serialize(),
         success: async function(result) {
 
             if (result.status == 1) // Success
@@ -82,12 +82,12 @@ $("#frmAddUnit").submit(function(e) {
 
 });
 
-$("#frmEditUnit").submit(function() {
+$("#frmEditTags").submit(function() {
 
     $.ajax({
         type: "POST",
-        url: "ajax/edit_unit.php",
-        data: $("#frmEditUnit").serialize(),
+        url: "ajax/edit_tags.php",
+        data: $("#frmEditTags").serialize(),
         success: async function(result) {
 
             if (result.status == 1) // Success
