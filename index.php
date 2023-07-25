@@ -8,78 +8,81 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Jaroon Software
-    </title>
+    <title>เฮือนช้างเผือก</title>
 
     <?php include_once('css.php'); ?>
-    <link rel="icon" href="img/logo_main.jpg">
+    <link rel="icon" href="backend/img/logo.png">
     <style>
     * {
         box-sizing: border-box;
         font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
         font-size: 16px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 360px) {
         .login {
-            width: 200px;
+            width: 100px;
+
         }
     }
 
     @media (min-width:1025px) {
         .login {
-            width: 200px;
+            width: 100px;
+
         }
     }
 
     .login {
-        width: 380px;
+        width: 350px;
         background-color: #ffffff;
         box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
-        margin: 100px auto;
+        margin: 150px auto;
     }
 
     .login h1 {
         text-align: center;
         color: #5b6574;
         font-size: 26px;
-        padding: 0px 0px 0px 0px;
-        border-bottom: 1px solid #83AF9B;
+        padding: 15px 0 10px 0;
+        border-bottom: 1px solid #F5B041;
     }
 
     .login form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        padding-top: 20px;
+        padding-top: 40px;
     }
 
     .login form label {
+        border-radius: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 50px;
-        height: 40px;
-        background-color: #83AF9B;
+        height: 50px;
+        background-color: #F5B041;
         color: #ffffff;
+
     }
 
     .login form input[type="password"],
     .login form input[type="text"] {
-        width: 290px;
-        height: 40px;
+        border-radius: 25px;
+        width: 255px;
+        height: 50px;
         border: 1px solid #dee0e4;
         margin-bottom: 20px;
         padding: 0 15px;
+
     }
 
     .login form input[type="submit"] {
         width: 100%;
         padding: 15px;
         margin-top: 20px;
-        background-color:  #83AF9B ;
+        background-color: #F5B041;
         border: 0;
         cursor: pointer;
         font-weight: bold;
@@ -88,13 +91,8 @@
     }
 
     .login form input[type="submit"]:hover {
-        background-color: #2F9599 ;
+        background-color:#F4D03F;
         transition: background-color 0.2s;
-    }
-
-    .modal-css {
-        pointer-events: auto;
-        width: 100%;
     }
     </style>
 </head>
@@ -118,80 +116,18 @@
 
     }
     ?>
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                
-                <!-- <div class="post-preview">
-                    <a href="<?php echo PATH; ?>/register">
-                        <h2 class="post-title">
-                            เปิดรับสมัครงาน
-                        </h2>
-                        <h3 class="post-subtitle">
-                            พนักงานฝ่ายขาย <br>
-                            พนักงานขายประจำภาคอีสาน ภาคเหนือ ภาคใต้ และภาคกลาง
-                        </h3>
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="#">Admin</a>
-                        on 18 มกราคม , 2021</p>
-                </div> -->
-
-                <!-- <hr> -->
-                <!-- <div class="post-preview">
-                    <a href="post.html">
-                        <h2 class="post-title">
-                            อยู่ในช่วงพัฒนา
-                        </h2>
-                    </a>
-                    <p class="post-meta">Posted by
-                        <a href="#">Start Bootstrap</a>
-                        on September 18, 2019</p>
-                </div> -->
-                <!-- <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Science has not yet mastered prophecy
-            </h2>
-            <h3 class="post-subtitle">
-              We predict too much for the next year and yet far too little for the next ten.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on August 24, 2019</p>
-        </div>
-        <hr>
-        <div class="post-preview">
-          <a href="post.html">
-            <h2 class="post-title">
-              Failure is not an option
-            </h2>
-            <h3 class="post-subtitle">
-              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
-            </h3>
-          </a>
-          <p class="post-meta">Posted by
-            <a href="#">Start Bootstrap</a>
-            on July 8, 2019</p>
-        </div>
-        <hr> -->
-                <!-- Pager -->
-
-                <!-- <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
-        </div> -->
-            </div>
-        </div>
-    </div>
-
-
-
-    <?php include_once('footer.php'); ?>
-
 
 </body>
+<!-- ส่วนล่าง -->
+<footer class="footer">
+    <div class="container p-4 pb-0">
+        <section class="mb-0" title="Jaroon Software Co., Ltd.">
+            <!-- Facebook -->
+            <a class="btn text-white btn-floating m-0 face" style="background-color: #3b5998;"
+                href="https://www.facebook.com/jaroonsoft" role="button"><i class="fab fa-facebook-f"></i>
+            </a>
+        </section>
+    </div>
+</footer>
 
 </html>

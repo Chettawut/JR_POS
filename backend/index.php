@@ -55,11 +55,6 @@
             </div>
             <section class="content">
                 <div class="container-fluid">
-                    <div class="row">
-                        <form action="https://www.canva.com/design/DAFoT_IB2l0/xsFyQsUZqh_pirr30Eaueg/view?utm_content=DA[…]mpaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
-                            <input type="submit" class="btn btn-primary" value="Prototype" />
-                        </form>
-                    </div>
                     <br>
                     <div class="row">                                
                                 <div class="col-lg-4 col-4">

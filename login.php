@@ -19,7 +19,7 @@
         }
 
         .login {
-            width: 400px;
+            width: 100%;
             background-color: #ffffff;
             box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
             margin: 100px auto;
@@ -34,6 +34,7 @@
         }
 
         .login form {
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -41,6 +42,7 @@
         }
 
         .login form label {
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -78,22 +80,8 @@
     </style>
 </head>
 
-<body>
-    <div class="login">
-        
-        <h1> <img src="img/logo.jpg"  width="100px;"></h1>
-        <form action="login_result.php" method="post">
-            <label for="username">
-                <i class="fas fa-user"></i>
-            </label>
-            <input type="text" name="username" placeholder="Username" id="username" required>
-            <label for="password">
-                <i class="fas fa-lock"></i>
-            </label>
-            <input type="password" name="password" placeholder="Password" id="password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+<body >
+   
 </body>
 
 </html>

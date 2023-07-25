@@ -1,12 +1,12 @@
 <!-- Footer -->
-<footer>
-        <div class="container">
+<footer style="background-color : white">
+        <div class="container" >
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
                     <ul class="list-inline text-center">
                         <li class="list-inline-item">
                             <a href="<?php echo PATH; ?>" >
-                            <!-- <a href="https://www.facebook.com/Jaroon-Freelance-2305305863090538" target="_blank"> -->
+                            <a href="https://www.facebook.com/jaroonsoft" target="_blank">
                                 <span class="fa-stack fa-lg">
                                     <i class="fas fa-circle fa-stack-2x"></i>
                                     <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
