@@ -7,4 +7,10 @@
     font-size: clamp(25px, 2.5vw, 30px);
     font-weight: bold;
 }
+.size{
+    font-size: 100px;
+}
+.BD1PXS{
+    border: 1px solid;
+}
 </style>

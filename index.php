@@ -45,7 +45,7 @@
         color: #5b6574;
         font-size: 26px;
         padding: 15px 0 10px 0;
-        border-bottom: 1px solid #F5B041;
+        border-bottom: 1px solid #3498DB;
     }
 
     .login form {
@@ -62,7 +62,7 @@
         align-items: center;
         width: 50px;
         height: 50px;
-        background-color: #F5B041;
+        background-color: #5DADE2;
         color: #ffffff;
 
     }
@@ -82,7 +82,7 @@
         width: 100%;
         padding: 15px;
         margin-top: 20px;
-        background-color: #F5B041;
+        background-color:#5DADE2;
         border: 0;
         cursor: pointer;
         font-weight: bold;

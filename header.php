@@ -9,7 +9,7 @@ include_once('config.php');
 <!-- <body  id="BGG" style="background-color: white"> -->
 
     <div class="login " >
-        <h1> <img src="img/logo.png" width="20%;"></h1>
+        <h1> <img src="img/logo1.png" width="40%;"></h1>
         <form action="login_result.php" method="post" >
 
             <label for="username" >

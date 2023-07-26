@@ -24,7 +24,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-header">Systems</li>
                 <li class="nav-item">
-                    <a href="<?php echo PATH; ?>/backend/sr" class="nav-link">
+                    <a href="<?php echo PATH; ?>/backend/so" class="nav-link">
                         <i class="nav-icon fas fa-chart-line"></i>
                         <p>
                             เปิดบิลขาย 
