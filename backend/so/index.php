@@ -40,73 +40,70 @@ include_once('../conn.php');
         <div class="content-wrapper">
             <section class="content">
                 <br>
+                <!-- ส่วนข้อมูล&ส่วนคิดเงิน -->
                 <div class="row">
-                    <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <h2 class="card-title">รายการสินค้า</h2>
-                                <br>
-                                <hr class="BD1PXS">
-
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">#</th>
-                                            <th scope="col">First</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Handle</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">3</th>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <br>
-                                <hr class="BD1PXS">
-                                <p class="card-text">Total</p>
+                    <div class="col-sm-6">
+                        <div class="card MH90">
+                            <div class="card-body fontdata">
+                                <p>บริษัท : จรูญซอร์ฟแวร์</p>
+                                <p>สาขา : ระยอง</p>
+                                <p>27/07/2023</p>
+                                <p>รหัสลูกค้า :</p>
+                                <p>Cashier :</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <p class="text-right font-weight-bold size">55,000.00</p>
-                                <hr class="BD1PXS">
-                                <p>สถานประกอบการ
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <br><br><br><br>
-                                </p>
-                                <hr class="BD1PXS">
-                                <button type="button" class="btn btn-primary">Primary</button>
-                                <button type="button" class="btn btn-secondary">Secondary</button>
-                                <button type="button" class="btn btn-success">Success</button>
-                                <button type="button" class="btn btn-danger">Danger</button>
-                                <button type="button" class="btn btn-warning">Warning</button>
-                                <button type="button" class="btn btn-info">Info</button>
+                        <div class="card MH90">
+                            <div class="card-body bg-dark">
+                                <p class="text-left font-weight-bold size1">รวม</p>
+                                <p class="text-right font-weight-bold size ">55,000.00</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ส่วนตาราง -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card MH100">
+                            <table class="table table-sm table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" width="10%">ลำดับ</th>
+                                        <th scope="col" width="10%">รหัสสินค้า</th>
+                                        <th scope="col" width="50%">ชื่อสินค้า</th>
+                                        <th scope="col" width="10%">หน่วย</th>
+                                        <th scope="col" width="10%">จำนวน</th>
+                                        <th scope="col" width="10%" >รวมเงิน</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -119,7 +116,6 @@ include_once('../conn.php');
         <?php 
         include_once('modal/modal_edit.php');
         ?>
-
     </div>
 
     <?php
