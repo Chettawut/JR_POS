@@ -65,19 +65,163 @@ include_once('../conn.php');
                 <!-- ส่วนตาราง -->
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="card MH100">
-                            <table class="table table-sm table-bordered text-center">
-                                <thead>
+                        <div class="card MH100 tableFixHead">
+                            <table class="table table-sm  table-borderless  table-hover text-center">
+                                <thead class="table-border">
                                     <tr>
                                         <th scope="col" width="10%">ลำดับ</th>
                                         <th scope="col" width="10%">รหัสสินค้า</th>
                                         <th scope="col" width="50%">ชื่อสินค้า</th>
                                         <th scope="col" width="10%">หน่วย</th>
                                         <th scope="col" width="10%">จำนวน</th>
-                                        <th scope="col" width="10%" >รวมเงิน</th>
+                                        <th scope="col" width="10%">รวมเงิน</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody >
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>00001</td>
+                                        <td class="text-left">นมหนองโพ</td>
+                                        <td>กล่อง</td>
+                                        <td>1</td>
+                                        <td class="text-right">15.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>00002</td>
+                                        <td class="text-left">ขนมปังแถว</td>
+                                        <td>ถุง</td>
+                                        <td>1</td>
+                                        <td class="text-right">25.00</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>00003</td>
+                                        <td class="text-left">น้ำอัดลม</td>
+                                        <td>ขวด</td>
+                                        <td>2</td>
+                                        <td class="text-right">40.00</td>
+                                    </tr>
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>00001</td>
@@ -107,6 +251,11 @@ include_once('../conn.php');
                         </div>
                     </div>
                 </div>
+                <footer class=" text-center text-white iBannerFix">
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2020 Copyright:
+                    </div>
+                </footer>
             </section>
         </div>
 

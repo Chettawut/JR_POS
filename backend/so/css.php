@@ -1,43 +1,71 @@
-<style>
-    .table-bordered thead td, .table-bordered thead th {
+    <style>
+.table-bordered thead td,
+.table-bordered thead th {
     border-bottom-width: 2px;
     white-space: nowrap;
 }
-.m-0{
+
+.m-0 {
     font-size: clamp(25px, 2.5vw, 30px);
     font-weight: bold;
 }
-.size{
+
+.size {
     font-size: clamp(75px, 2.5vw, 40px);
 }
-.size1{
+
+.size1 {
     font-size: clamp(35px, 2.5vw, 15px);
 }
-.BD1PXS{
+
+.BD1PXS {
     border: 1px solid;
 }
-.MH90{
+
+.MH90 {
     height: 92%;
 }
-.MH100{
-    height: 515px;
+
+.MH100 {
+    height: 670px;
     max-height: auto;
     overflow: auto;
 }
-.MH50{
-    height: 50px;
-    max-height: auto;
-}
-.fontdata{
+
+.fontdata {
     font-size: clamp(15px, 2.5vw, 12px);
 }
-div.iBannerFix{
-    height:50px;
-    position:fixed;
-    left:0px;
-    bottom:0px;
-    background-color:#000000;
-    width:100%;color:white;
+
+.iBannerFix {
+    height: 50px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    background-color: #000000;
+    width: 100%;
+    color: white;
     z-index: 99;
 }
-</style>
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 450px;
+
+}
+
+.tableFixHead thead th {
+    position: sticky;
+    top: 0px;
+    background: white;
+    font-size: 18px;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    border: 1px;
+}
+    </style>
