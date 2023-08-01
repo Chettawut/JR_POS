@@ -124,6 +124,15 @@
                     </a>
                 </li>
                 <?php } ?>
+                <li class="nav-header">ตั้งค่า</li>
+                <li class="nav-item">
+                    <a href="<?php echo PATH; ?>/backend/user" class="nav-link">
+                        <i class="nav-icon fas fa-users"></i>
+                        <p>
+                            ขนาดหน้าจอ
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
 

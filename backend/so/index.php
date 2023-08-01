@@ -66,15 +66,15 @@ include_once('../conn.php');
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card MH100 tableFixHead">
-                            <table class="table table-sm  table-borderless  table-hover text-center">
-                                <thead class="table-border">
+                            <table class="table table-bordered table-sm  table-hover text-center" >
+                                <thead>
                                     <tr>
                                         <th scope="col" width="10%">ลำดับ</th>
                                         <th scope="col" width="10%">รหัสสินค้า</th>
                                         <th scope="col" width="50%">ชื่อสินค้า</th>
                                         <th scope="col" width="10%">หน่วย</th>
                                         <th scope="col" width="10%">จำนวน</th>
-                                        <th scope="col" width="10%">รวมเงิน</th>
+                                        <th  scope="col" width="10%">รวมเงิน</th>
                                     </tr>
                                 </thead>
                                 <tbody >
@@ -251,10 +251,8 @@ include_once('../conn.php');
                         </div>
                     </div>
                 </div>
-                <footer class=" text-center text-white iBannerFix">
-                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                        © 2020 Copyright:
-                    </div>
+                <footer class=" text-center iBannerFix">
+                    <div class="text-right " > ใส่รหัสสินค้า <input id="stinput"></div>
                 </footer>
             </section>
         </div>

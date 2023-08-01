@@ -1,9 +1,5 @@
     <style>
-.table-bordered thead td,
-.table-bordered thead th {
-    border-bottom-width: 2px;
-    white-space: nowrap;
-}
+
 
 .m-0 {
     font-size: clamp(25px, 2.5vw, 30px);
@@ -26,11 +22,6 @@
     height: 92%;
 }
 
-.MH100 {
-    height: 670px;
-    max-height: auto;
-    overflow: auto;
-}
 
 .fontdata {
     font-size: clamp(15px, 2.5vw, 12px);
@@ -41,31 +32,33 @@
     position: fixed;
     left: 0px;
     bottom: 0px;
-    background-color: #000000;
+    background-color:#FDFEFE;
     width: 100%;
-    color: white;
+    font: black;
     z-index: 99;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    padding-top:10px;
+    padding-right:20px;
 }
 
 .tableFixHead {
     overflow-y: auto;
-    height: 450px;
+    height: 550px;
 
 }
 
 .tableFixHead thead th {
     position: sticky;
-    top: 0px;
+    top: -1px;
     background: white;
     font-size: 18px;
-
+    /* border-bottom: 20px solid; */
 }
 
 table {
     border-collapse: collapse;
     width: 100%;
 }
-th{
-    border: 1px;
-}
+
     </style>
