@@ -72,47 +72,6 @@
                         </p>
                     </a>
                 </li>
-                <!-- <li class="nav-item">
-                        <a href="<?php echo PATH; ?>/backend/production/pp" class="nav-link">
-                            <i class="nav-icon fas fa-clipboard-list"></i>
-                            <p>
-                            Production Plan
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo PATH; ?>/backend/production/wo" class="nav-link">
-                            <i class="nav-icon fas fa-clipboard-list"></i>
-                            <p>
-                                Work Order
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo PATH; ?>/backend/store/gr" class="nav-link">
-                            <i class="nav-icon fas fa-clipboard-list"></i>
-                            <p>
-                            Goods Receipt
-                            </p>
-                        </a>
-                    </li>
-                    
-                    <li class="nav-header">Reports</li>
-                    <li class="nav-item">
-                        <a href="<?php echo PATH; ?>/backend/reports/MSF01" class="nav-link">
-                            <i class="nav-icon fas  fa-file-alt"></i>
-                            <p>
-                                Monthly Sales Forecast
-                            </p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="<?php echo PATH; ?>/backend/reports/RFM01" class="nav-link">
-                            <i class="nav-icon fas fa-paste "></i>
-                            <p>
-                            Reservation Of Material
-                        </p>
-                    </a></li> -->
                 <?php if ($_SESSION['type'] == 'Admin') { ?>
                 <li class="nav-header">ระบบจัดการพนักงาน</li>
                 <li class="nav-item">
@@ -126,7 +85,7 @@
                 <?php } ?>
                 <li class="nav-header">ตั้งค่า</li>
                 <li class="nav-item">
-                    <a href="<?php echo PATH; ?>/backend/user" class="nav-link">
+                    <a href="<?php echo PATH; ?>/backend/default" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
                             ขนาดหน้าจอ

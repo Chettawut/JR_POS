@@ -57,7 +57,7 @@ include_once('../conn.php');
                         <div class="card MH90">
                             <div class="card-body bg-dark">
                                 <p class="text-left font-weight-bold size1">รวม</p>
-                                <p class="text-right font-weight-bold size ">55,000.00</p>
+                                <p id="spantotal" class="text-right font-weight-bold size ">0</p>
                             </div>
                         </div>
                     </div>
@@ -66,7 +66,7 @@ include_once('../conn.php');
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card MH100 tableFixHead">
-                            <table class="table table-bordered table-sm  table-hover text-center" >
+                            <table class="table table-bordered table-sm  table-hover text-center" ame="tableSales" id="tableSales" >
                                 <thead>
                                     <tr>
                                         <th scope="col" width="10%">ลำดับ</th>
@@ -77,7 +77,8 @@ include_once('../conn.php');
                                         <th  scope="col" width="10%">รวมเงิน</th>
                                     </tr>
                                 </thead>
-                                <tbody >
+                                <tbody>
+                                    <!--
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>00001</td>
@@ -86,7 +87,7 @@ include_once('../conn.php');
                                         <td>1</td>
                                         <td class="text-right">15.00</td>
                                     </tr>
-                                    <tr>
+                                     <tr>
                                         <th scope="row">2</th>
                                         <td>00002</td>
                                         <td class="text-left">ขนมปังแถว</td>
@@ -245,7 +246,7 @@ include_once('../conn.php');
                                         <td>ขวด</td>
                                         <td>2</td>
                                         <td class="text-right">40.00</td>
-                                    </tr>
+                                    </tr> -->
                                 </tbody>
                             </table>
                         </div>
