@@ -75,7 +75,7 @@ $("#frmAddType").submit(function(e) {
         type: "POST",
         url: "ajax/add_type.php",
         data: $("#frmAddType").serialize() +
-            "&id=" + '<?php echo $_SESSION['id'];?>',
+            "&id=" + '<?php echo $_SESSION['code'];?>',
         success: async function(result) {
 
             if (result.status == 1) // Success
@@ -96,7 +96,7 @@ $("#frmEditType").submit(function() {
         type: "POST",
         url: "ajax/edit_type.php",
         data: $("#frmEditType").serialize() +
-            "&id=" + '<?php echo $_SESSION['id'];?>',
+            "&id=" + '<?php echo $_SESSION['code'];?>',
         success: async function(result) {
 
             if (result.status == 1) // Success
