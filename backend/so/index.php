@@ -253,7 +253,7 @@ include_once('../conn.php');
                     </div>
                 </div>
                 <footer class=" text-center iBannerFix">
-                    <div class="text-right " > ใส่รหัสสินค้า <input id="stinput"></div>
+                    <div class="text-right" > ใส่รหัสสินค้า <input class="form-control-sm" id="stinput"></div>
                 </footer>
             </section>
         </div>
