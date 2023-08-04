@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <div class="col text-center">
+                    <div class="text-center">
                         <button type="button" class="btn"
                             style="color:white;background : #BFACE2;text-shadow:2px 2px 4px #000000;"
                             data-dismiss="modal">ปิด</button>

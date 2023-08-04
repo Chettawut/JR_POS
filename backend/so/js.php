@@ -42,8 +42,8 @@ $(function() {
                                 '<tr><td scope="row">' + (stcode.length) +
                                 '</td><td>' + result.stcode +
                                 '</td><td class="text-left">' + result.stname1 +
-                                '</td><td>' + result.unit +
-                                '</td><td>1</td><td class="text-right">' +
+                                '</td><td>1</td><td>300</td><td>' + result.unit +
+                                '</td><td class="text-right">' +
                                 formatMoney(
                                     result.price, 2) + '</td></tr>'
                             );
