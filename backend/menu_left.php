@@ -86,9 +86,9 @@
                 <li class="nav-header">ตั้งค่า</li>
                 <li class="nav-item">
                     <a href="<?php echo PATH; ?>/backend/default" class="nav-link">
-                        <i class="nav-icon fas fa-users"></i>
+                        <i class="nav-icon fas fa-wrench"></i>
                         <p>
-                            ขนาดหน้าจอ
+                            การตั้งค่า
                         </p>
                     </a>
                 </li>

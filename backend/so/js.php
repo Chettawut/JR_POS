@@ -39,10 +39,15 @@ $(function() {
                             price.push(String(result.price));
 
                             $('#tableSales').append(
+
                                 '<tr><td scope="row">' + (stcode.length) +
+
                                 '</td><td>' + result.stcode +
+
                                 '</td><td class="text-left">' + result.stname1 +
-                                '</td><td>1</td><td>300</td><td>' + result.unit +
+                                
+                                '</td><td>1</td><td>' + result.price +
+                                '</td><td>' + result.unit +
                                 '</td><td class="text-right">' +
                                 formatMoney(
                                     result.price, 2) + '</td></tr>'
@@ -55,11 +60,16 @@ $(function() {
                             amount[slot]++;
                             for (let count = 0; count < stcode.length; count++) {
                                 $('#tableSales').append(
+
                                     '<tr><td scope="row">' + [count+1] +
+
                                     '</td><td>' + stcode[count] +
+
                                     '</td><td class="text-left">' + stname1[count] +
-                                    '</td><td>' + unit[count] +
                                     '</td><td>' + amount[count] +
+                                    '</td><td>' + price[count] +
+                                    '</td><td>' + unit[count] +
+                                   
                                     '</td><td class="text-right">' +
                                     formatMoney(
                                         (amount[count] * price[count]), 2) + '</td></tr>'

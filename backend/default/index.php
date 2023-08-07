@@ -37,73 +37,72 @@ include_once('../conn.php');
 
 
 
-        <div class="content-wrapper">
+        <div class="content-wrapper" style="padding-left: 40px;">
 
             <div class="content-header">
                 <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <span class="m-0"><i class="nav-icon fas fa-paste"></i> ค่าพื้นฐานโปรแกรม (Default Data)</span>
+                    <div class="row">
+                        <div class="col-10">
+                            <span class="m-0"><i class="fas fa-wrench"></i></i> ค่าพื้นฐานโปรแกรม (Default Data)</span>
                         </div>
-                        <!-- <div class="col-sm-6">
-                            <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Store</a></li>
-                                <li class="breadcrumb-item active">ข้อมูลสินค้า</li>
-                            </ol>
-                        </div> -->
                     </div>
                 </div>
             </div>
-
             <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-12">
-                            <form data-ajax="false" target="_blank" method="post">
-                                <div data-role="fieldcontain">
-
-                                    <div class="btn-group" id="btnAddSO" role="group" aria-label="Basic example">
-                                        <button type="button"
-                                            style="color:white;background : #673ab7; font-size:20px;text-shadow:2px 2px 4px #000000;"
-                                            class="btn" data-toggle="modal" data-target="#modal_add"><i
-                                                class="fas fa-plus-circle" aria-hidden="true"></i>
-                                            เพิ่มหน่วยนับสินค้า</button>
-                                        <button type="button"
-                                            style="color:white;background : #9575cd; font-size:20px;text-shadow:2px 2px 4px #000000;"
-                                            id="btnRefresh" class="btn"><i class="fas fa-sync-alt"
-                                                aria-hidden="true"></i> Refresh</button>
-                                    </div>
-                                    <div class="btn-group" id="btnBack" style="display:none;" role="group"
-                                        aria-label="Basic example">
-                                        <button type="button" class="btn btn-success"><i class="fa fa fa-tags"
-                                                aria-hidden="true"></i>
-                                            ย้อนกลับ</button>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- ปรับขนาดหน้าจอ -->
+                        <div class="card col-sm-6">
+                            <div class="card-header h5">
+                                ขนาดหน้าจอ
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="ความกว้าง">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="ความสูง">
+                                        </div>
                                     </div>
 
+                                </form>
+                            </div>
+                        </div>
+                        <!-- เปลี่ยนชื่อร้าน -->
+                        <div class="card col-sm-6">
+                            <div class="card-header h5">
+                                ชื่อร้าน
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="text" class="form-control" placeholder="ใส่ชื่อที่ต้องการเปลี่ยน">
+                                        </div>
+                                    </div>
 
-                                </div>
-                            </form>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- เปลี่ยนรูป LOGO -->
+                        <div class="card col-sm-6">
+                            <div class="card-header h5">
+                                รูป LOGO
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group col-12">
+                                        <label for="exampleFormControlFile1">เลือกรูปที่ต้องการใส่</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-lg-12 col-12">
-                            <table name="tableUnit" id="tableUnit"
-                                class="table table-striped table-valign-middle table-bordered table-hovers text-nowarp">
-                                <thead class="sticky-top table-defalut bg-dark">
-                                    <tr>
-                                        <th width="80%">ชื่อหน่วยนับสินค้า</th>
-                                        <th width="20%">สถานะการใช้งาน</th>
-                                    </tr>
-                                </thead>
-                                <tbody class="text-nowrap" style="background:#ECF2FF;">
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
                 </div>
+                <button type="submit f" class="btn btn-primary">ยืนยันการเปลี่ยนแปลง</button>
             </section>
         </div>
 
