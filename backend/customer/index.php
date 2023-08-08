@@ -13,8 +13,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ข้อมูลลูกค้า (Customer)</title>
-
+    <title>ข้อมูลสมาชิก (Member)</title>
     <?php 
     include_once('css.php'); 
     include_once('../../config.php');
@@ -43,8 +42,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <span class="m-0"> <i class="nav-icon fas fa-address-book"></i> ข้อมูลลูกค้า
-                                (Customer)</span>
+                            <span class="m-0"> <i class="nav-icon fas fa-address-book"></i> ข้อมูลสมาชิก (Member)</span>
                         </div>
                         <div class="col-sm-6">
                         </div>
@@ -59,11 +57,9 @@
                             <form data-ajax="false" target="_blank" method="post">
                                 <div data-role="fieldcontain">
                                     <div class="btn" id="btnAddCustomer" aria-label="Basic example">
-                                        <button id="btnCUSTOMER"type="button" class="btn" data-toggle="modal" data-target="#modal_add"
-                                            style="color:white;background : #2874A6; font-size:20px;text-shadow:2px 2px 4px #000000;"><i
-                                                class="	fas fa-user-plus" aria-hidden="true"></i>เพิ่มลูกค้า</button>
-                                        <button type="button" id="btnRefresh" class="btn"
-                                            style="color:white;background : #148F77; font-size:20px;text-shadow:2px 2px 4px #000000;"><i
+                                        <button id="btnCUSTOMER" type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_add">
+                                            <i class="fas fa-user-plus" aria-hidden="true"></i>เพิ่มลูกค้า</button>
+                                        <button type="button" id="btnRefresh" class="btn btn-info"><i
                                                 class="fas fa-sync-alt" aria-hidden="true"></i> Refresh</button>
                                     </div>
                                     <div class="btn-group" id="btnBack" style="display:none;" role="group"

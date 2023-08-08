@@ -13,9 +13,15 @@
 
                 <div class="modal-body form-group">
                     <div class="form-group row">
-                        <label for="" class="col-sm-4 col-form-label">ยอดสุดธิ</label>
+                        <label for="" class="col-sm-4 col-form-label">ยอดสุทธิ</label>
                         <div class="col-sm-6">
                             <input type="text" readonly class="form-control form-control-lg" id="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-4 col-form-label">รหัสสมาชิก</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-lg h2" id="">
                         </div>
                     </div>
                     <div class="form-group row">

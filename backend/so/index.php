@@ -45,11 +45,47 @@ include_once('../conn.php');
                     <div class="col-sm-6">
                         <div class="card MH90">
                             <div class="card-body fontdata">
-                                <p>บริษัท : จรูญซอร์ฟแวร์</p>
-                                <p>สาขา : ระยอง</p>
-                                <p>27/07/2023</p>
-                                <p>รหัสลูกค้า :</p>
-                                <p>Cashier :</p>
+                                <div class="row text-left">
+                                    <div class="col-2 h6">
+                                        <p>บริษัท</p>
+                                    </div>
+                                    <div class="col-1 h6">
+                                        <p>:</p>
+                                    </div>
+                                    <div class="col-7 h6">
+                                        <p>จรูญซอร์ฟแวร์</p>
+                                    </div>
+                                    <div class="col-2 h6">
+                                        <p class="text-right">27/07/2023</p>
+                                    </div>
+                                    <div class="col-2 h6">
+                                        <p>สาขา</p>
+                                    </div>
+                                    <div class="col-1 h6">
+                                        <p>:</p>
+                                    </div>
+                                    <div class="col-9 h6">
+                                        <p class="text-left">ระยอง</p>
+                                    </div>
+                                    <div class="col-2 h6">
+                                        <p>รหัสพนักงาน</p>
+                                    </div>
+                                    <div class="col-1 h6">
+                                        <p class="">:</p>
+                                    </div>
+                                    <div class="col-9 h6">
+                                        <p>1219900845298</p>
+                                    </div>
+                                    <div class="col-2 h6">
+                                        <p>Cashier</p>
+                                    </div>
+                                    <div class="col-1 h6">
+                                        <p>:</p>
+                                    </div>
+                                    <div class="col-9 h6">
+                                        <p class="text-left">01</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -66,7 +102,8 @@ include_once('../conn.php');
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card MH100 tableFixHead">
-                            <table class="table table-bordered table-sm  table-hover text-center" ame="tableSales" id="tableSales" >
+                            <table class="table table-bordered table-sm  table-hover text-center" ame="tableSales"
+                                id="tableSales">
                                 <thead>
                                     <tr>
                                         <th scope="col" width="5%">ลำดับ</th>
@@ -75,7 +112,7 @@ include_once('../conn.php');
                                         <th scope="col" width="5%">จำนวน</th>
                                         <th scope="col" width="7%">ราคาต่อหน่วย</th>
                                         <th scope="col" width="5%">หน่วย</th>
-                                        <th  scope="col" width="13%">รวมเงิน</th>
+                                        <th scope="col" width="13%">รวมเงิน</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -85,7 +122,7 @@ include_once('../conn.php');
                     </div>
                 </div>
                 <footer class=" text-center iBannerFix">
-                    <div class="text-right" > ใส่รหัสสินค้า <input class="form-control-sm" id="stinput"></div>
+                    <div class="text-right"> ใส่รหัสสินค้า <input class="form-control-sm" id="stinput"></div>
                 </footer>
             </section>
         </div>
