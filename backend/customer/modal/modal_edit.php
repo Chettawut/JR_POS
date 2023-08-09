@@ -2,8 +2,7 @@
     aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content w3-flat-turquoise">
-            <div class="modal-header"
-                style="color:white;background : linear-gradient(to right, #61398F, #8B5FBF);font-size:20px;text-shadow:2px 2px 4px #000000;">
+            <div class="modal-header bg-dark">
                 <h5 class="modal-title">แก้ไขลูกค้า</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -94,10 +93,8 @@
                 </div>
                 <div class="modal-footer">
                     <div class="col text-center">
-                        <button type="button" class="btn" data-dismiss="modal"
-                            style="color:white;background : #BFACE2;text-shadow:2px 2px 4px #000000;">ปิด</button>
-                        <button type="submit" form="frmEditCustomer" class="btn"
-                            style="color:white;background :  #7e57c2;text-shadow:2px 2px 4px #000000;">แก้ไข</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">ปิด</button>
+                        <button type="submit" form="frmEditCustomer" class="btn btn-success">แก้ไข</button>
                     </div>
                 </div>
             </form>

@@ -1,10 +1,10 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="<?php echo PATH; ?>/backend/" class="brand-link bg-purple">
-        <img src="<?php echo PATH; ?>/backend/img/logo_fb.png" class="brand-image img-circle elevation-3" <span
-            class="brand-text font-weight-light">
-        <span class="brand-text font-weight-light">JR Stock</span>
+    <a href="<?php echo PATH; ?>/backend/" class="brand-link">
+        <img src="<?php echo PATH; ?>/backend/img/logo POS.png" class="brand-image img-circle elevation-3" <span
+            class="brand-text font-weight-light ">
+        <span class="brand-text font-weight-light ">JR POS</span>
 
     </a>
 
@@ -50,7 +50,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo PATH; ?>/backend/tags" class="nav-link">
-                        <i class="nav-icon fas fas fa-box"></i>
+                        <i class="nav-icon 	fas fa-tag"></i>
                         <p>
                         Tags
                         </p>
@@ -58,7 +58,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo PATH; ?>/backend/type" class="nav-link">
-                        <i class="nav-icon fa fa-cube"></i>
+                        <i class="nav-icon far fa-object-group"></i>
                         <p>
                             ประเภทสินค้า
                         </p>
@@ -66,9 +66,9 @@
                 </li>
                 <li class="nav-item">
                     <a href="<?php echo PATH; ?>/backend/customer" class="nav-link">
-                        <i class="nav-icon fa fa-cube"></i>
+                        <i class="nav-icon fas fa-address-book"></i>
                         <p>
-                            ลูกค้า
+                            สมาชิก
                         </p>
                     </a>
                 </li>

@@ -2,7 +2,7 @@
     aria-labelledby="modelEditLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content w3-flat-turquoise">
-            <div class="modal-header bg-gradient-secondary">
+            <div class="modal-header bg-dark">
                 <h5 class="modal-title"><i class="fa fa-users" aria-hidden="true"></i> แก้ไขผู้ใช้งาน</h5>
             </div>
             <form name="frmEditUser" id="frmEditUser" method="POST" style="padding:10px;" action="javascript:void(0);">
@@ -18,7 +18,7 @@
                         </div>
                         <div class="form-group col-lg-2 col-12">
                             <label class="col-form-label">รีเซ็ต Password</label>
-                            <button type="button" class="btn btn-secondary form-control" data-toggle="modal"
+                            <button type="button" class="btn btn-warning form-control font-weight-bold" data-toggle="modal"
                                 data-target="#modal_reset" data-dismiss="modal">Reset</button>
                         </div>
                     </div>
@@ -59,19 +59,11 @@
                         </div>
                     </div>
 
-
-                    <!-- <div class="form-group col-md-6">
-                                <label for="inputEmail4">Money</label>
-                                <input type="text" class="form-control" name="lastname" id="lastname" disabled>
-                            </div> -->
-
-
-
                     <input type="hidden" class="form-control" name="id" id="id">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
-                    <button type="submit" form="frmEditUser" class="btn btn-primary">แก้ไข</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                    <button type="submit" form="frmEditUser" class="btn btn-success">บันทึกการแก้ไข</button>
                 </div>
             </form>
         </div>

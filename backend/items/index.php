@@ -56,18 +56,11 @@ include_once('../conn.php');
                             <form data-ajax="false" target="_blank" method="post">
                                 <div data-role="fieldcontain">
 
-                                    <div class="btn-group" id="btnAddSO" role="group" aria-label="Basic example">
-                                        <button type="button"
-                                            style="color:white;background : #673ab7; font-size:20px;text-shadow:2px 2px 4px #000000;"
-                                            class="btn" data-toggle="modal" data-target="#modal_add"><i
-                                                class="fas fa-plus-circle" aria-hidden="true"></i>
-                                            เพิ่มรหัสสินค้า</button>
-                                        <button type="button"
-                                            style="color:white;background : #9575cd; font-size:20px;text-shadow:2px 2px 4px #000000;"
-                                            id="btnRefresh" class="btn"><i class="fas fa-sync-alt"
-                                                aria-hidden="true"></i> Refresh</button>
+                                    <div class="btn" id="btnAddSO"  aria-label="Basic example">
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal_add"><i class="fa fa-qrcode" aria-hidden="true"></i> เพิ่มรหัสสินค้า</button>
+                                        <button type="button" id="btnRefresh" class="btn btn-info"><i class="fas fa-sync-alt"aria-hidden="true"></i> Refresh</button>
                                     </div>
-                                    <div class="btn-group" id="btnBack" style="display:none;" role="group"
+                                    <div class="btn-group" id="btnBack" style="display:none;"
                                         aria-label="Basic example">
                                         <button type="button" class="btn btn-success"><i class="fa fa fa-tags"
                                                 aria-hidden="true"></i>

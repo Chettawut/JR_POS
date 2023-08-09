@@ -2,7 +2,7 @@
     aria-hidden="true">
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content w3-flat-turquoise">
-            <div class="modal-header bg-gradient-secondary">
+            <div class="modal-header bg-dark">
                 <h5 class="modal-title"><i class="fa fa-users" aria-hidden="true"></i> เพิ่มผู้ใช้งาน</h5>
             </div>
             <form name="frmAddUser" id="frmAddUser" action="" method="post">
@@ -57,8 +57,8 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <input type="submit" class="btn btn-primary" value="Submit">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                    <input type="submit" class="btn btn-success" value="ยืนยัน">
                 </div>
             </form>
 

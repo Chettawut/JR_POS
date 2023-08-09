@@ -2,7 +2,7 @@
     aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content w3-flat-turquoise">
-            <div class="modal-header bg-gradient-secondary">
+            <div class="modal-header bg-dark">
                 <h5 class="modal-title">Reset Password</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -29,9 +29,8 @@
                     <input type="hidden" id="perresetid" name="perresetid">
                     <div class="modal-footer">
                         <div class="col text-center">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">ปิด</button>
-                            <button type="submit" id="btnReset" form="frmReset"
-                                class="btn btn-primary">รีเซ็ต</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">ยกเลิก</button>
+                            <button type="submit" id="btnReset" form="frmReset" class="btn btn-success">ยืนยันการแก้ไข</button>
                         </div>
                     </div>
                 </div>

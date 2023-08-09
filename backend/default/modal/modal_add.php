@@ -23,12 +23,8 @@
             </div>
             <div class="modal-footer">
                 <div class="col text-center">
-                    <button type="button" class="btn"
-                        style="color:white;background : #BFACE2;text-shadow:2px 2px 4px #000000;"
-                        data-dismiss="modal">ปิด</button>
-                    <button type="submit" form="frmAddUnit"
-                        style="color:white;background :  #7e57c2;text-shadow:2px 2px 4px #000000;"
-                        class="btn">เพิ่ม</button>
+                    <button type="button" class="btn" data-dismiss="modal">ปิด</button>
+                    <button type="submit" form="frmAddUnit" class="btn">เพิ่ม</button>
                 </div>
             </div>
         </div>

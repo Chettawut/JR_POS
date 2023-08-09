@@ -53,12 +53,12 @@
                         <div class="col-lg-12 col-12">
                             <form data-ajax="false" target="_blank" method="post">
                                 <div data-role="fieldcontain">
-                                    <div class="btn-group" id="btnAddSO" role="group" aria-label="Basic example">
+                                    <div class="btn" id="btnAddSO" role="group" aria-label="Basic example">
                                         <button type="button" class="btn btn-success" data-toggle="modal"
-                                            data-target="#modal_add"><i class="fa fa-plus-circle"
+                                            data-target="#modal_add"><i class="fas fa-user-plus"
                                                 aria-hidden="true"></i>
                                             เพิ่มผู้ใช้</button>
-                                        <button type="button" id="btnRefresh" class="btn btn-primary"><i
+                                        <button type="button" id="btnRefresh" class="btn btn-info"><i
                                                 class="fas fa-sync-alt" aria-hidden="true"></i> Refresh</button>
                                     </div>
                                     <div class="btn-group" id="btnBack" style="display:none;" role="group"
@@ -75,7 +75,7 @@
                     <div class="row">
                         <div class="col-lg-12 col-12">
                             <table name="tableUser" id="tableUser" class="table table-bordered table-striped">
-                                <thead style=" background-color:#D6EAF8;">
+                                <thead class="bg-dark">
                                     <tr>
                                         <th width="25%">Username</th>
                                         <th width="25%">ชื่อ</th>

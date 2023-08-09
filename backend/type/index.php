@@ -57,15 +57,11 @@
                         <div class="col-lg-12 col-12">
                             <form data-ajax="false" target="_blank" method="post">
                                 <div data-role="fieldcontain">
-                                    <div class="btn-group" id="btnAdd" role="group" aria-label="Basic example">
-                                        <button type="button" class="btn "
-                                            style="color:white;background :  #673ab7; font-size:20px;text-shadow:2px 2px 4px #000000;"
-                                            data-toggle="modal" data-target="#modal_add"><i class="fas fa-plus-circle"
-                                                aria-hidden="true"></i>
+                                    <div class="btn" id="btnAdd" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-success"
+                                            data-toggle="modal" data-target="#modal_add"><i class="	fas fa-cart-plus"aria-hidden="true"></i>
                                             เพิ่มประเภทสินค้า</button>
-                                        <button type="button" id="btnRefresh" class="btn"
-                                            style="color:white;background : #9575cd; font-size:20px;text-shadow:2px 2px 4px #000000;"><i
-                                                class="fas fa-sync-alt" aria-hidden="true"></i> Refresh</button>
+                                        <button type="button" id="btnRefresh" class="btn btn-info"><i class="fas fa-sync-alt" aria-hidden="true"></i> Refresh</button>
                                     </div>
                                     <div class="btn-group" id="btnBack" style="display:none;" role="group"
                                         aria-label="Basic example">
